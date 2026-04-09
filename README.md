@@ -1,16 +1,81 @@
-# React + Vite
+# 🌟 Media Hub (Search Engine)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sophisticated, high-performance media discovery platform built with **React 19**, **Redux Toolkit**, and **Tailwind CSS**. Search across multiple providers (Unsplash, Pexels, Giphy) for high-quality photos, videos, and GIFs in a single, unified interface.
 
-Currently, two official plugins are available:
+![Project Preview](https://github.com/VishalFulkar/Media-Search-Application/raw/main/public/preview.png) *(Note: Replace with your actual screenshot link)*
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- **Multi-Source Search**: Seamlessly search across three major media platforms:
+  - 📸 **Unsplash** for high-resolution photography.
+  - 🎥 **Pexels** for stunning stock videos.
+  - 🎭 **Giphy** for trending GIFs and animations.
+- **Unified Experience**: Switch between Photos, Videos, and GIFs with a smooth tabbed navigation.
+- **Personal Collections**: Save your favorite media items to a local collection for quick access.
+- **Dynamic Grid Layout**: Responsive masonry-style grid that adapts to all screen sizes.
+- **State Persistence**: Powered by Redux Toolkit for efficient global state management.
+- **Instant Notifications**: Real-time feedback for actions like saving or removing items using React Toastify.
+- **Modern UI/UX**: Premium aesthetic with glassmorphism touches and smooth transitions.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **Framework**: [React 19](https://react.dev/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **State Management**: [Redux Toolkit](https://redux-toolkit.js.org/)
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
+- **API Communication**: [Axios](https://axios-http.com/)
+- **Navigation**: [React Router DOM 7](https://reactrouter.com/)
+- **Notifications**: [React Toastify](https://fkhadra.github.io/react-toastify/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📦 Getting Started
+
+### Prerequisites
+
+- Node.js (v18.0.0 or higher)
+- npm or yarn
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/VishalFulkar/Media-Search-Application.git
+   cd Media-Search-Application
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Environment Configuration**
+   Create a `.env` file in the root directory and add your API keys:
+   ```env
+   VITE_UNSPLASH_KEY=your_unsplash_access_key
+   VITE_PEXELS_KEY=your_pexels_api_key
+   VITE_GIPHY_KEY=your_giphy_api_key
+   ```
+
+4. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+## 📂 Project Structure
+
+```bash
+src/
+├── api/          # API services for Unsplash, Pexels, and Giphy
+├── components/   # Reusable UI components (Navbar, SearchBar, Cards)
+├── Pages/        # Main application views (Home, Collections)
+├── redux/        # Store configuration and slices (Collection slice)
+├── App.jsx       # Main application entry point
+└── main.jsx      # Rendering logic
+```
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+Developed with ❤️ by [Vishal Fulkar](https://github.com/VishalFulkar)
+
