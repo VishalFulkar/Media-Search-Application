@@ -2,7 +2,7 @@
 
 A sophisticated, high-performance media discovery platform built with **React 19**, **Redux Toolkit**, and **Tailwind CSS**. Search across multiple providers (Unsplash, Pexels, Giphy) for high-quality photos, videos, and GIFs in a single, unified interface.
 
-![Project Preview](https://github.com/VishalFulkar/Media-Search-Application/raw/main/public/preview.png) *(Note: Replace with your actual screenshot link)*
+![Project Preview](https://github.com/VishalFulkar/Media-Search-Application/raw/main/public/preview.png) 
 
 ## 🚀 Features
 
