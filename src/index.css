@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+
+#bottom{
+    background: linear-gradient(transparent,black);
+}
+
+:root{
+    --c1:rgb(27, 38, 44);
+    --c2:rgb(15, 76, 117);
+    --c3:rgb(50, 130, 184);
+    --c4:rgb(187, 225, 250);
+}
+
+
+@layer utilities {
+  /* ... your existing dot and grid patterns ... */
+
+  .bg-combined-pattern {
+    /* We layer the radial-gradient (dots) ON TOP of the linear-gradients (grid lines) */
+    background-image: 
+      radial-gradient(rgba(152, 152, 152, 0.090) 1px, transparent 1px),
+      linear-gradient(rgba(152, 152, 152, 0.042) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(152, 152, 152, 0.042) 1px, transparent 1px);
+    
+    /* We must specify the size for EACH of the three gradients above in the exact same order */
+    /* Dots size, Horizontal Line size, Vertical Line size */
+    background-size: 45px 45px, 55px 55px, 55px 55px; 
+    background-position: center center;
+  }
+}
+
